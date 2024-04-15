@@ -2,7 +2,7 @@
     position: relative;
     grid-area: header;
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
     padding: 64px 0 0 55px;
     background-color: transparent;
@@ -10,20 +10,18 @@
 }
 
 .headerLogo {
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 62px;
-    align-items: center;
-    z-index: 100;
+    padding-right: 62px;
 }
 
 .header nav{
     display: grid;
     height: 96px;
     padding-left: 123px;
+    padding-right: 165px;
     grid-auto-flow: column;
     gap: 20px;
     backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.04);
     align-items: center;
 }
 
@@ -38,8 +36,9 @@
 }
 
 .stripe {
-    width: 473px;
     background-color: #979797;
     height: 1px;
-    transform: translateX(5%);
+    width: calc(100% + 28px);
+    z-index: 1;
+
 }

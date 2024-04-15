@@ -23,7 +23,10 @@
     grid-area: content;
     display: grid;
     grid-template-rows: 1fr auto;
+    align-items: flex-end;
     grid-template-areas:
     "main"
     "background";
+    /* padding: auto 165px 131px 165px; */
+    padding: 0 165px 131px;
 }
