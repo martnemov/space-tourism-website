@@ -17,7 +17,7 @@
     z-index: 100;
 }
 
-.header nav{
+.header nav {
     display: grid;
     height: 96px;
     padding-left: 123px;
@@ -34,7 +34,7 @@
     list-style-type: none;
     gap: 50px;
     letter-spacing: 3px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .stripe {

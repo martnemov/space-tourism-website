@@ -9,7 +9,7 @@
     justify-items: center;
 }
 
-.homeText{
+.homeText {
     display: grid;
     place-items: start;
     grid-template-columns: auto;
@@ -17,29 +17,29 @@
     gap: 1rem;
 }
 
-.homeBtn{
+.homeBtn {
     position: absolute;
     bottom: 0;
     right: 0;
 }
 
-.btn{
-    background-color: #FFFFFF;
+.btn {
+    background-color: #ffffff;
     height: 274px;
     width: 274px;
-    color: #0B0D17;
+    color: #0b0d17;
     padding: 20px 40px;
     border-radius: 140px;
     border: none;
     font-size: 32px;
-    font-family: "Bellefair", serif;
+    font-family: 'Bellefair', serif;
     font-weight: 400;
     font-style: normal;
 }
 
 h1 {
     font-size: 150px;
-    font-family: "Bellefair", serif;
+    font-family: 'Bellefair', serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -48,10 +48,10 @@ h2 {
     font-size: 28px;
     font-weight: normal;
     letter-spacing: 4.72px;
-    color: #D0D6F9;
+    color: #d0d6f9;
 }
 
 p {
     font-size: 18px;
-    color: #D0D6F9;
+    color: #d0d6f9;
 }
