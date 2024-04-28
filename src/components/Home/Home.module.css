@@ -1,7 +1,7 @@
 .home {
     position: relative;
     grid-area: main;
-    margin: auto 165px 131px 165px;
+    /* margin: auto 165px 131px 165px; */
     height: 382px;
     display: grid;
     grid-template-columns: 450px 1fr;
