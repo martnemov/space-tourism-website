@@ -1,29 +1,44 @@
 import style from './Header.module.css';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
     return (
         <header className={style.header}>
             <div className={style.headerLogo}>
-                <img src="/src/assets/shared/logo.svg" alt="logo"/>
+                <img src="/src/assets/shared/logo.svg" alt="logo" />
             </div>
             <div className={style.stripe}></div>
             <nav>
                 <ul>
-                    <li><a href="#">00 Home</a></li>
-                    <li><a href="#">01 DESTINATION</a></li>
-                    <li><a href="#">02 Crew</a></li>
-                    <li><a href="#">03 TECHNOLOGY</a></li>
-                </ul>
-             </nav>
-        </header>
-    )
-                    <li>00 HOME</li>
-                    <li>01 DESTINATION</li>
-                    <li>02 CREW</li>
-                    <li>03 TECHNOLOGY</li>
+                    <li>
+                        <NavLink
+                            to="/home"
+                            className={(navData) =>
+                                navData.isActive ? style.active : undefined
+                            }
+                        >
+                            <span>00</span> <span>Home</span>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/destination">
+                            <span>01</span> <span>Destination</span>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/crew">
+                            <span>02</span> <span>Crew</span>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/technology">
+                            <span>03</span> <span>Technology</span>
+                        </NavLink>
+                    </li>
                 </ul>
             </nav>
-        </div>
+        </header>
     );
+}
 
 export default Header;

@@ -1,7 +1,6 @@
 .home {
     position: relative;
     grid-area: main;
-    /* margin: auto 165px 131px 165px; */
     height: 382px;
     display: grid;
     grid-template-columns: 450px 1fr;
@@ -27,31 +26,70 @@
     background-color: #ffffff;
     height: 274px;
     width: 274px;
-    color: #0b0d17;
+    color: var(--color-black);
     padding: 20px 40px;
     border-radius: 140px;
     border: none;
     font-size: 32px;
-    font-family: 'Bellefair', serif;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: normal;
+    font-family: var(--font-bellefair), sans-serif;
+    letter-spacing: 2px;
 }
 
 h1 {
+    font-weight: normal;
     font-size: 150px;
-    font-family: 'Bellefair', serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: var(--font-bellefair), sans-serif;
 }
 
 h2 {
-    font-size: 28px;
     font-weight: normal;
+    font-family: var(--font-barlow-condensed), sans-serif;
+    font-size: 28px;
     letter-spacing: 4.72px;
-    color: #d0d6f9;
+    color: var(--color-grey);
 }
 
 p {
+    font-weight: normal;
+    font-family: var(--font-barlow), sans-serif;
     font-size: 18px;
-    color: #d0d6f9;
+    color: var(--color-grey);
+}
+
+@media (max-width: 800px) {
+    .home {
+        position: static;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            'text'
+            'button';
+        row-gap: 156px;
+    }
+
+    .homeText {
+        grid-area: text;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .homeBtn {
+        grid-area: button;
+        position: static;
+    }
+
+    h2 {
+        font-size: 20px;
+        letter-spacing: 3.38px;
+        font-weight: normal;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .btn {
+        width: 242px;
+        height: 242px;
+    }
 }
